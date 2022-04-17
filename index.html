@@ -5,24 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .first {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(53, 184, 190, 1);
+            left: 0%;
+            right: 0%;
+            top: 0;
+            
+        }
+        .menu {
+            font-size: 15px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#28224B;
+            text-decoration: none;
+            left: 0%;
+            right: 0%;
+            top: 48px;
+            height: 100px;
+            
+        }
+        .firstfoto {
+            width: 600px;
+            height: 580px;
+            right: 0px;
+            position: absolute;
+        }
+        #blue {
+            color: #35b8be;
+        }
+        .menu:hover {
+            text-decoration: underline;
+        }
+        #logo {
+            width: 40px;
+            height: 51px;
+            right: 96.67%;
+            top: 73px;
+        }
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 60px;
+            color: rgba(8, 9, 10, 1);
+            position: absolute;
+            width: 600px;
+        }
+        #text {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba(8, 9, 10, 1);
+            width: 539px; 
+            position: absolute;
+            top: 512px;  
+        }
+        #section {
+            height: 820px;
+            left: 0;
+            right: 0;
+            top: 148px;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
-        We're open and available for takeaway & delivery.
-        <a href="">Order Now</a>
-        <div>
-        <img src="assets/images/IMAGE.png" alt="Логотип компании" width="40px" height="51px"/>
-    </div>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Order</a>
-            <a href="">Company</a>
-            <a href="">FAQ</a>
-            <a href="">Contact</a>
-            <a href="">Company</a>
-
+        <p class="first">
+         We're open and available for takeaway & delivery.
+                <a href="order.html">Order Now</a>
+        </p>        
+        <img id="logo" src="assets/images/IMAGE.png" alt="Логотип компании" />
+            <nav>
+            <a class="menu" href="home.html" id="blue">Home</a>
+            <a class="menu" href="order.html">Order</a>
+            <a class="menu" href="about.html">Company</a>
+            <a class="menu" href="faq.html">FAQ</a>
+            <a class="menu" href="contact.html">Contact</a>
+            <a class="menu" href="basket.html" id="blue">Basket</a>
         </nav>
     </header>
+    <section id="secion">
+        <h1>Beautiful food & takeaway, delivered to your door.</h1>
+        <p id="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
+        <img class="firstfoto" src="assets/images/IMAGE1.png" alt="Фото на первой странице" width="600" height="580"/>
+    </section>
+    
     
 </body>
 </html>
